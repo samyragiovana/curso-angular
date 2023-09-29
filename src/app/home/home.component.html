@@ -1,0 +1,7 @@
+<main>
+   <mat-toolbar color = "primary"><span>Angular</span></mat-toolbar>
+    <div class="card" *ngFor="let pokemon of pokemons; index as i">
+        <img [src]="pegaImagensPokemon(i+1)">
+        <h1>{{pokemon.name}}</h1>
+    </div>
+</main>
